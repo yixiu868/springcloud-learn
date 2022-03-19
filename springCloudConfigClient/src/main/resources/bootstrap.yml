@@ -1,0 +1,12 @@
+spring:
+   application:
+      # 对应Config server所获取的配置文件的{application}
+      name: microservice-foo
+   config:
+      import: optional:configserver:http://localhost:8080
+   cloud:      
+      config:
+         # profile对应config server所获取的配置文件中的{profile}
+         profile: dev
+         # 指定Git的分支
+         label: master

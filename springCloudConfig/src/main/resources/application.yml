@@ -1,0 +1,15 @@
+server:
+   port: 8080
+spring:
+   application:
+      name: config-server
+   cloud:
+      config:
+         server:
+            git:
+               # 配置Git仓库地址
+               uri: https://gitee.com/yixiu868/gitConfig.git
+               # Git仓库的账号
+               username: yixiu868
+               # Git仓库的密码
+               password: cnd0789
